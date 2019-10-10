@@ -14,12 +14,12 @@ var drink = {
       });
     },
     update: function(objColVals, condition, cb) {
-      orm.update("cats", objColVals, condition, function(res) {
+      orm.update("drinks", objColVals, condition, function(res) {
         cb(res);
       });
     },
     delete: function(condition, cb) {
-      orm.delete("cats", condition, function(res) {
+      orm.delete("drinks", condition, function(res) {
         cb(res);
       });
     }
