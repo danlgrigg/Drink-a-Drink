@@ -1,3 +1,4 @@
+
 INSERT INTO drinks (drink_name, imbibed) 
 VALUES ("Vesper", false);
 
