@@ -1,4 +1,4 @@
-<h1>Cocktails!</h1>
+<h1>Party!</h1>
 
 <h2>These drinks need to be imbibed!</h2>
 
@@ -15,7 +15,7 @@
 <ul>
   {{#each drinks}}
     {{#if imbibed}}
-      {{> drinks/drink-block sleep=false}}
+      {{> drinks/drink-block imbibed=false}}
     {{/if}}
   {{/each}}
 </ul>
@@ -28,11 +28,11 @@
     <input type="text" id="ca" name="name">
   </div>
 
-  <div class="form-group">
+  {{!-- <div class="form-group">
     <label for="imbibed">Imbibed?</label><br>
     <input type="radio" name="imbibed" value="1" checked> Empty!<br>
     <input type="radio" name="imbibed" value="0"> Imbibe!
-  </div>
+  </div> --}}
 
   <button type="submit">Add Drink</button>
 </form>
