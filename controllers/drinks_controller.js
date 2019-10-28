@@ -16,7 +16,9 @@ router.get("/", function(req, res) {
   });
 });
 
-router.post("/api/drink", function(req, res) {
+router.post("/api/drinks", function(req, res) {
+
+  console.log("Req.BODY",req.body)
   drink.create([
     "drink_name", "imbibed"
   ], [
@@ -27,7 +29,7 @@ router.post("/api/drink", function(req, res) {
   });
 });
 
-router.put("/api/drink/:id", function(req, res) {
+router.put("/api/drinks/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
